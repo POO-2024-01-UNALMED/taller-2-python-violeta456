@@ -22,8 +22,9 @@ class Auto:
     def cantidadAsientos(self):
         asientos=self.asientos
         cantidad=0
+        tipo=type(Asiento())
         for i in asientos():
-            if type(i) is Asiento:
+            if type(i) ==tipo:
                 cantidad+=1
         return cantidad
 
